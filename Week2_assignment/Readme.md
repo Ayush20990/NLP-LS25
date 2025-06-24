@@ -27,9 +27,9 @@ corpus = [
 
 2. **TF-IDF Calculation**
    - For each word in each document, the TF-IDF value was computed using:
-     \[
-     \text{TF-IDF}(w, d) = \text{TF}(w, d) \times \log\left(\frac{N}{\text{DF}(w)}\right)
-     \]
+      \[
+  \text{TF-IDF}(w, d) = \text{TF}(w, d) \times \log\left(\frac{N}{\text{DF}(w)}\right)
+  \]
      where \( N \) is the total number of documents.
 
 3. **Libraries Used**
@@ -50,9 +50,8 @@ corpus = [
 - Downweights frequent/common words like "the", "is", and "a".
 - **Important Note:** Scikit-learn uses a slightly different (smoothed) formula for IDF by default:
 
-  \[
-  \text{IDF}(t) = \log\left(\frac{1 + n}{1 + \text{DF}(t)}\right) + 1
-  \]
+**IDF(t) = log((1 + n) / (1 + DF(t))) + 1**
+
 
   This prevents division by zero and ensures a non-zero weight for all terms. Our manual implementation does not apply this smoothing, so differences are observed in the implementation
 ---
