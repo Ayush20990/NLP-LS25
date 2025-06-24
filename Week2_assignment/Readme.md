@@ -27,9 +27,7 @@ corpus = [
 
 2. **TF-IDF Calculation**
    - For each word in each document, the TF-IDF value was computed using:
-      \[
-  \text{TF-IDF}(w, d) = \text{TF}(w, d) \times \log\left(\frac{N}{\text{DF}(w)}\right)
-  \]
+      **TF-IDF(w, d) = TF(w, d) × log(N / DF(w))**
      where \( N \) is the total number of documents.
 
 3. **Libraries Used**
